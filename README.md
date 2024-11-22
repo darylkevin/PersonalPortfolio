@@ -1,36 +1,224 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Created by Daryl Kevin
+Friday, November 22 2024
+Hong Kong
 
-## Getting Started
+---
 
-First, run the development server:
+# Personal Portfolio Website Template
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+A sleek, professional, and low-profile portfolio template designed to showcase your experiences, projects, and skills effectively. This template is simple yet focused, allowing users to easily customize it to their needs.
+
+Made by yours truly, myself :)
+
+---
+
+## 🌟 Features
+
+- **Customizable in One File**: Update your personal info, experiences, projects, education, and contact links directly in `definitions.ts`.
+- **Sleek Design**: A clean and professional layout for showcasing your skills and projects.
+- **Component-Based Architecture**: Reusable UI components for each section make it easy to add or modify functionality.
+- **TailwindCSS Styling**: Built with TailwindCSS for quick and scalable design changes.
+- **Prettier Integration**: Keep your code consistent and clean with Prettier formatting (configured with TailwindCSS support).
+
+---
+
+## 📂 Project Structure
+
+Here’s an overview of the project structure:
+
+```
+.
+├── app/
+│   ├── favicon.ico           # Custom favicon for your site
+│   ├── fonts/                # Fonts used in the template
+│   │   ├── GeistMonoVF.woff
+│   │   └── GeistVF.woff
+│   ├── globals.css           # Global styles for the application
+│   ├── layout.tsx            # Root layout component
+│   ├── lib/
+│   │   └── definitions.ts    # Main configuration file for portfolio details
+│   ├── page.tsx              # Main entry point for the homepage
+│   └── ui/                   # Reusable UI components for each section
+│       ├── Education.tsx     # Education section
+│       ├── ExperienceCard.tsx # Individual experience card
+│       ├── Experiences.tsx   # Experiences section
+│       ├── Footer.tsx        # Footer section
+│       ├── Hero.tsx          # Hero section (introduction)
+│       ├── ProjectCard.tsx   # Individual project card
+│       └── Projects.tsx      # Projects section
+├── public/                   # Public assets
+│   ├── icons/                # Icons for contact and social links
+│   ├── projects/             # Placeholder images for projects
+├── package.json              # Project dependencies and scripts
+├── pnpm-lock.yaml            # Lockfile for dependency management
+├── tailwind.config.ts        # TailwindCSS configuration
+├── tsconfig.json             # TypeScript configuration
+└── postcss.config.mjs        # PostCSS configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Follow these steps to set up and customize your portfolio:
 
-## Learn More
+### 1. Clone the Repository
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git clone https://github.com/darylkevin/PersonalPortfolio.git
+cd PersonalPortfolio
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Install Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Install all required dependencies using `pnpm`:
 
-## Deploy on Vercel
+```bash
+pnpm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> **Note**: Make sure you have `pnpm` installed. If not, refer to [pnpm installation guide](https://pnpm.io/installation).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Run the Development Server
+
+Start the development server to preview your changes:
+
+```bash
+pnpm dev
+```
+
+The site will be available at `http://localhost:3000`.
+
+---
+
+## 🛠️ Customization Guide
+
+### Edit `definitions.ts`
+
+The `definitions.ts` file (located in `app/lib/`) is your one-stop shop for customizing this portfolio. Here's a quick overview of what you can configure:
+
+#### **Hero Section**
+Define your profile details:
+```typescript
+export const hero = {
+  name: "Your Name",
+  title: "Your Title",
+  about: "A short description about yourself.",
+};
+```
+
+#### **Experiences**
+Showcase your work experience:
+```typescript
+export const experiences = [
+  {
+    company: "Company Name",
+    title: "Your Role",
+    period: "Start-End Dates",
+    description: "Brief summary of your responsibilities.",
+    skills: ["Skill 1", "Skill 2", "Skill 3"],
+  },
+];
+```
+
+#### **Projects**
+Highlight your projects:
+```typescript
+export const projects = [
+  {
+    title: "Project Name",
+    image: "/projects/your-image.png",
+    imageAlt: "Alt text for the image",
+    description: "A short description about the project.",
+    skills: ["Technology 1", "Technology 2"],
+  },
+];
+```
+
+#### **Education**
+Add your educational background:
+```typescript
+export const education = {
+  institution: "Your Institution",
+  degree: "Your Degree",
+  period: "Start-End Dates",
+  description: "Details about your studies.",
+};
+```
+
+#### **Footer**
+Customize the footer text and contact details:
+```typescript
+export const footer = {
+  contact: "Your Contact Info",
+  text: "Additional footer text or description.",
+};
+```
+
+#### **Profile Links**
+Add links to your social profiles:
+```typescript
+export const profileLinks = {
+  github: {
+    alt: "GitHub",
+    url: "https://github.com/your-username",
+    icon: "/icons/github-white.png",
+  },
+  linkedin: {
+    alt: "LinkedIn",
+    url: "https://linkedin.com/in/your-profile",
+    icon: "/icons/in-white.png",
+  },
+  email: {
+    alt: "Email",
+    url: "mailto:your-email@example.com",
+    icon: "/icons/mail-open-white.png",
+  },
+};
+```
+
+---
+
+## 🖋️ Formatting & Styling
+
+The project uses **Prettier** to maintain consistent code style. A Prettier configuration is included with TailwindCSS plugin support. Run the following command to format your code:
+
+```bash
+pnpm prettier --write .
+```
+
+---
+
+## 📦 Built With
+
+- [Next.js](https://nextjs.org/) – React Framework for building fast, server-rendered apps.
+- [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS framework for styling.
+- [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript for better developer experience.
+- [Prettier](https://prettier.io/) – Code formatter with TailwindCSS support.
+
+---
+
+## 🖼️ Screenshots
+
+_Add screenshots or GIFs of your portfolio here to showcase the design!_
+
+---
+
+## 🧑‍💻 Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgements
+
+- Icons from [Iconify](https://iconify.design/).
+- Fonts by [Geist](https://geist.com/).
+
+---
