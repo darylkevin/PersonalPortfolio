@@ -2,7 +2,7 @@ Created by Daryl Kevin \
 Friday, November 22 2024 \
 Hong Kong
 
-# Personal Portfolio Website Template
+# Personal Portfolio Template
 
 A sleek, professional, and low-profile portfolio template designed to showcase your experiences, projects, and skills effectively. This template is simple yet focused, allowing users to easily customize it to their needs.
 
