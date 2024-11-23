@@ -19,7 +19,7 @@ const Hero = ({ scrollStatus }) => {
 
         <div className="flex h-24 justify-center gap-8 py-4 pb-8 max-lg:hidden">
           <div
-            className="relative hover:cursor-pointer"
+            className="relative transition-all hover:scale-105 hover:cursor-pointer"
             onClick={() =>
               window.scrollTo(
                 scrollX,
@@ -40,7 +40,7 @@ const Hero = ({ scrollStatus }) => {
             </h1>
           </div>
           <div
-            className="relative hover:cursor-pointer"
+            className="relative transition-all hover:scale-105 hover:cursor-pointer"
             onClick={() =>
               window.scrollTo(
                 scrollX,
@@ -61,7 +61,7 @@ const Hero = ({ scrollStatus }) => {
             </h1>
           </div>
           <div
-            className="relative hover:cursor-pointer"
+            className="relative transition-all hover:scale-105 hover:cursor-pointer"
             onClick={() =>
               window.scrollTo(
                 scrollX,

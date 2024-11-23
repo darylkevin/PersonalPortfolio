@@ -14,8 +14,11 @@ const Experiences = () => {
   });
 
   return (
-    <section id="experiences" className="text-md border-[1px] border-blue-400">
-      <p ref={experiencesRef} className="mb-8 py-2 max-lg:sticky max-lg:top-0">
+    <section
+      id="experiences"
+      className="text-md mb-24 border-[1px] border-blue-400"
+    >
+      <p ref={experiencesRef} className="pb-4 max-lg:sticky max-lg:top-0">
         Experiences
       </p>
       <div>

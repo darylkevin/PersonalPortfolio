@@ -18,9 +18,9 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="text-md my-8 border-[1px] border-green-400"
+      className="text-md my-24 border-[1px] border-green-400"
     >
-      <p ref={projectsRef} className="my-8 py-2 max-lg:sticky max-lg:top-0">
+      <p ref={projectsRef} className="pb-4 max-lg:sticky max-lg:top-0">
         Projects
       </p>
       <div>

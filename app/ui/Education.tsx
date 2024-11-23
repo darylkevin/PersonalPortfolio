@@ -15,9 +15,9 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="text-md my-8 border-[1px] border-yellow-400"
+      className="text-md my-24 border-[1px] border-yellow-400"
     >
-      <p ref={educationRef} className="my-8 py-2 max-lg:sticky max-lg:top-0">
+      <p ref={educationRef} className="pb-4 max-lg:sticky max-lg:top-0">
         Education
       </p>
       <article className="py-4">
