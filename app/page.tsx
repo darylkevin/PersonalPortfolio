@@ -53,7 +53,7 @@ export default function Home() {
         </header>
         <main className="py-16 lg:py-24">
           <Experiences />
-          <Projects />
+          <Projects scrollStatus={scrollStatus} />
           <Education />
           <Footer />
         </main>
