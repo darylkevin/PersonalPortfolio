@@ -1,6 +1,6 @@
 Created by Daryl Kevin \
 Friday, November 22 2024 \
-Hong Kong \
+Hong Kong
 
 # Personal Portfolio Website Template
 
