@@ -2,8 +2,6 @@ Created by Daryl Kevin
 Friday, November 22 2024
 Hong Kong
 
----
-
 # Personal Portfolio Website Template
 
 A sleek, professional, and low-profile portfolio template designed to showcase your experiences, projects, and skills effectively. This template is simple yet focused, allowing users to easily customize it to their needs.
@@ -16,6 +14,7 @@ Made by yours truly, myself :)
 
 - **Customizable in One File**: Update your personal info, experiences, projects, education, and contact links directly in `definitions.ts`.
 - **Sleek Design**: A clean and professional layout for showcasing your skills and projects.
+- **Highly Responsive**: The template is designed with responsiveness in mind, providing a seamless user experience across all devices. Whether it's viewed on desktops, tablets, or smartphones, the layout dynamically adjusts to ensure optimal display and usability.
 - **Component-Based Architecture**: Reusable UI components for each section make it easy to add or modify functionality.
 - **TailwindCSS Styling**: Built with TailwindCSS for quick and scalable design changes.
 - **Prettier Integration**: Keep your code consistent and clean with Prettier formatting (configured with TailwindCSS support).
@@ -200,7 +199,7 @@ pnpm prettier --write .
 
 ## 🖼️ Screenshots
 
-_Add screenshots or GIFs of your portfolio here to showcase the design!_
+_Add screenshots or GIFs of your portfolio here to showcase the design’s responsiveness at various breakpoints!_
 
 ---
 
@@ -222,3 +221,5 @@ This project is licensed under the **MIT License** – see the [LICENSE](./LICEN
 - Fonts by [Geist](https://geist.com/).
 
 ---
+
+This template is not only sleek and professional but also ensures your portfolio looks stunning on any device, from large desktop screens to compact mobile devices. TailwindCSS and responsive design principles make this the perfect platform for showcasing your work with style and flexibility! 🚀
