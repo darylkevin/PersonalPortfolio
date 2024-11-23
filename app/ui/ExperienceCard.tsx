@@ -1,7 +1,9 @@
 const ExperienceCard = ({ experience }) => {
   return (
     <article className="py-4 lg:flex lg:gap-8">
-      <p className="lg:min-w-28 xl:min-w-36 text-sm font-extralight pt-1">{experience.period}</p>
+      <p className="pt-1 text-sm font-extralight lg:min-w-28 xl:min-w-36">
+        {experience.period}
+      </p>
       <div>
         <p className="font-bold">
           {experience.company},{" "}

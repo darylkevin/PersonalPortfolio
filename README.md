@@ -21,42 +21,6 @@ Made by yours truly, myself :)
 
 ---
 
-## 📂 Project Structure
-
-Here’s an overview of the project structure:
-
-```
-.
-├── app/
-│   ├── favicon.ico           # Custom favicon for your site
-│   ├── fonts/                # Fonts used in the template
-│   │   ├── GeistMonoVF.woff
-│   │   └── GeistVF.woff
-│   ├── globals.css           # Global styles for the application
-│   ├── layout.tsx            # Root layout component
-│   ├── lib/
-│   │   └── definitions.ts    # Main configuration file for portfolio details
-│   ├── page.tsx              # Main entry point for the homepage
-│   └── ui/                   # Reusable UI components for each section
-│       ├── Education.tsx     # Education section
-│       ├── ExperienceCard.tsx # Individual experience card
-│       ├── Experiences.tsx   # Experiences section
-│       ├── Footer.tsx        # Footer section
-│       ├── Hero.tsx          # Hero section (introduction)
-│       ├── ProjectCard.tsx   # Individual project card
-│       └── Projects.tsx      # Projects section
-├── public/                   # Public assets
-│   ├── icons/                # Icons for contact and social links
-│   ├── projects/             # Placeholder images for projects
-├── package.json              # Project dependencies and scripts
-├── pnpm-lock.yaml            # Lockfile for dependency management
-├── tailwind.config.ts        # TailwindCSS configuration
-├── tsconfig.json             # TypeScript configuration
-└── postcss.config.mjs        # PostCSS configuration
-```
-
----
-
 ## 🚀 Getting Started
 
 Follow these steps to set up and customize your portfolio:
@@ -183,7 +147,7 @@ export const profileLinks = {
 The project uses **Prettier** to maintain consistent code style. A Prettier configuration is included with TailwindCSS plugin support. Run the following command to format your code:
 
 ```bash
-pnpm prettier --write .
+npx prettier --write .
 ```
 
 ---
@@ -205,21 +169,10 @@ _Add screenshots or GIFs of your portfolio here to showcase the design’s respo
 
 ## 🧑‍💻 Contributing
 
-Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+Contributions are welcome. If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
 ---
 
 ## 📜 License
 
 This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
-
----
-
-## 🙌 Acknowledgements
-
-- Icons from [Iconify](https://iconify.design/).
-- Fonts by [Geist](https://geist.com/).
-
----
-
-This template is not only sleek and professional but also ensures your portfolio looks stunning on any device, from large desktop screens to compact mobile devices. TailwindCSS and responsive design principles make this the perfect platform for showcasing your work with style and flexibility! 🚀
