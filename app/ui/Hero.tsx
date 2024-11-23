@@ -4,7 +4,10 @@ import { hero, profileLinks, profileLinkKey } from "../lib/definitions";
 
 const Hero = ({ scrollStatus }) => {
   return (
-    <section id="hero" className="flex h-full place-items-center border-[1px] border-red-400 pt-2 text-center font-bold">
+    <section
+      id="hero"
+      className="flex h-full place-items-center border-[1px] border-red-400 pt-2 text-center font-bold"
+    >
       <div className="flex-col justify-between">
         <span className="text-3xl sm:text-4xl md:text-6xl lg:text-5xl">
           {hero.name}
@@ -20,7 +23,8 @@ const Hero = ({ scrollStatus }) => {
             onClick={() =>
               window.scrollTo(
                 scrollX,
-                document.getElementById("experiences")?.offsetTop - document.getElementById("hero")?.offsetTop,
+                document.getElementById("experiences")?.offsetTop -
+                  document.getElementById("hero")?.offsetTop,
               )
             }
           >
@@ -40,7 +44,8 @@ const Hero = ({ scrollStatus }) => {
             onClick={() =>
               window.scrollTo(
                 scrollX,
-                document.getElementById("projects")?.offsetTop - document.getElementById("hero")?.offsetTop,
+                document.getElementById("projects")?.offsetTop -
+                  document.getElementById("hero")?.offsetTop,
               )
             }
           >
@@ -60,7 +65,8 @@ const Hero = ({ scrollStatus }) => {
             onClick={() =>
               window.scrollTo(
                 scrollX,
-                document.getElementById("education")?.offsetTop - document.getElementById("hero")?.offsetTop,
+                document.getElementById("education")?.offsetTop -
+                  document.getElementById("hero")?.offsetTop,
               )
             }
           >

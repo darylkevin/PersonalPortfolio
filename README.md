@@ -61,7 +61,9 @@ The site will be available at `http://localhost:3000`.
 The `definitions.ts` file (located in `app/lib/`) is your one-stop shop for customizing this portfolio. Here's a quick overview of what you can configure:
 
 #### **Hero Section**
+
 Define your profile details:
+
 ```typescript
 export const hero = {
   name: "Your Name",
@@ -71,7 +73,9 @@ export const hero = {
 ```
 
 #### **Experiences**
+
 Showcase your work experience:
+
 ```typescript
 export const experiences = [
   {
@@ -85,7 +89,9 @@ export const experiences = [
 ```
 
 #### **Projects**
+
 Highlight your projects:
+
 ```typescript
 export const projects = [
   {
@@ -99,7 +105,9 @@ export const projects = [
 ```
 
 #### **Education**
+
 Add your educational background:
+
 ```typescript
 export const education = {
   institution: "Your Institution",
@@ -110,7 +118,9 @@ export const education = {
 ```
 
 #### **Footer**
+
 Customize the footer text and contact details:
+
 ```typescript
 export const footer = {
   contact: "Your Contact Info",
@@ -119,7 +129,9 @@ export const footer = {
 ```
 
 #### **Profile Links**
+
 Add links to your social profiles:
+
 ```typescript
 export const profileLinks = {
   github: {
