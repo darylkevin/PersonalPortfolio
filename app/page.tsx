@@ -1,3 +1,5 @@
+'use client';
+import { useEffect, useState } from "react";
 // xs: 320
 // sm: 640
 // md: 768
@@ -17,6 +19,24 @@ import Projects from "./ui/Projects";
 // monitors: 1440px-2560px
 
 export default function Home() {
+
+  const [scrollStatus, setScrollStatus] = useState('start')
+  const [experiencesSectionBoundingElement, setExperiencesSectionBoundingElement] = useState(null);
+  const [projectsSectionBoundingElement, setProjectsSectionBoundingElement] = useState(null);
+  const [educationSectionBoundingElement, setEducationSectionBoundingElement] = useState(null);
+
+  useEffect(() => {
+    const experiences = document.getElementById('experiences')
+    const projects = document.getElementById('projects')
+    const education = document.getElementById('education')
+
+    console.log(experiences?.getBoundingClientRect())
+    console.log(projects?.getBoundingClientRect())
+    console.log(education?.getBoundingClientRect())
+  }, [])
+
+
+
   return (
     <div className="mx-auto max-w-screen-xl">
       <div className="mx-auto grid grid-cols-1 px-8 xs:max-w-sm sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] lg:grid-cols-2 lg:px-12 xl:max-w-[1280px]">
@@ -24,9 +44,9 @@ export default function Home() {
           <Hero />
         </header>
         <main className="py-16 lg:py-24">
-          <Experiences />
-          <Projects />
-          <Education />
+          <Experiences className="section"/>
+          <Projects className="section"/>
+          <Education className="section"/>
           <Footer />
         </main>
       </div>
