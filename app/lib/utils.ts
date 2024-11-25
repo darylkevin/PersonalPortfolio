@@ -10,7 +10,6 @@ export const handleCardFocus = (cardType, index) => {
         currentCard.classList.add("hover:rounded-xl");
         currentCard?.classList.add("transition-opacity");
       } else {
-        currentCard.classList.add("blur-sm");
         currentCard.classList.add("opacity-50");
       }
     });
@@ -23,7 +22,6 @@ export const handleCardFocus = (cardType, index) => {
         currentCard.classList.add("hover:rounded-xl");
         currentCard?.classList.add("transition-opacity");
       } else {
-        currentCard.classList.add("blur-sm");
         currentCard.classList.add("opacity-50");
       }
     });
@@ -36,7 +34,6 @@ export const handleCardFocus = (cardType, index) => {
         currentCard.classList.add("hover:rounded-xl");
         currentCard?.classList.add("transition-opacity");
       } else {
-        currentCard.classList.add("blur-sm");
         currentCard.classList.add("opacity-50");
       }
     });
@@ -49,7 +46,6 @@ export const handleCardUnfocus = () => {
 
     currentCard.classList.remove("hover:shadow-inner");
     currentCard.classList.remove("hover:rounded-lg");
-    currentCard.classList.remove("blur-sm");
     currentCard.classList.remove("opacity-50");
   });
 
@@ -58,7 +54,6 @@ export const handleCardUnfocus = () => {
 
     currentCard.classList.remove("hover:shadow-inner");
     currentCard.classList.remove("hover:rounded-lg");
-    currentCard.classList.remove("blur-sm");
     currentCard.classList.remove("opacity-50");
   });
 
@@ -67,7 +62,6 @@ export const handleCardUnfocus = () => {
 
     currentCard.classList.remove("hover:shadow-inner");
     currentCard.classList.remove("hover:rounded-lg");
-    currentCard.classList.remove("blur-sm");
     currentCard.classList.remove("opacity-50");
   });
 };
