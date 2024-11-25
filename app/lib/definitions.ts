@@ -1,4 +1,8 @@
-export type profileLinkKey = "github" | "linkedin" | "email";
+export const links = {
+  experiences: true,
+  projects: true,
+  education: true,
+}
 
 export const hero = {
   name: "Lorem",
@@ -15,38 +19,43 @@ export const experiences = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "",
   },
   {
-    company: "Ipsum",
-    title: "Lorem ipsum",
-    period: "2021 - Present",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
-    skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
-  },
-  {
-    company: "Ipsum",
+    company: "Lorem",
     title: "Lorem ipsum",
     period: "2021",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
   {
-    company: "Ipsum",
+    company: "Lorem",
     title: "Lorem ipsum",
     period: "2021",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
   {
-    company: "Ipsum",
+    company: "Lorem",
     title: "Lorem ipsum",
     period: "2021",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
+  },
+  {
+    company: "Lorem",
+    title: "Lorem ipsum",
+    period: "2021",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+    skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
 ];
 
@@ -58,6 +67,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
   {
     title: "Lorem ipsum",
@@ -66,6 +76,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
   {
     title: "Lorem ipsum",
@@ -74,6 +85,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
   {
     title: "Lorem ipsum",
@@ -82,6 +94,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
   {
     title: "Lorem ipsum",
@@ -90,6 +103,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
   {
     title: "Lorem ipsum",
@@ -98,6 +112,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
   {
     title: "Lorem ipsum",
@@ -106,20 +121,31 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
   },
 ];
 
-export const education = {
-  institution: "Lorem",
-  degree: "Lorem ipsum",
-  period: "2021",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
-};
+export const education = [
+  { 
+    institution: "Lorem",
+    degree: "Lorem ipsum",
+    period: "2021",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+    link: "https://google.com",
+  },
+  { 
+    institution: "Lorem",
+    degree: "Lorem ipsum",
+    period: "2021",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+    link: "https://google.com",
+  },
+]
 
 export const footer = {
-  contact: "Lorem",
-  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+  text: "Labore esse nulla duis fugiat deserunt consectetur voluptate Lorem anim. Nulla voluptate nostrud id reprehenderit magna qui dolor duis. Cillum aute officia aliquip sint eu. Quis ex elit cupidatat est qui aliquip enim occaecat nulla mollit non sit enim.",
 };
 
 export const profileLinks = {

@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background: rgba(11, 17, 32, 1);
+}
+ 
 body {
   color: white;
-  background: rgb(2, 6, 23);
+  background: linear-gradient(
+    22deg,
+    rgba(11, 17, 32, 1) 0%,
+    rgb(23, 30, 39) 66%,
+    rgb(10, 36, 77) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::selection {
+  background: rgb(102, 214, 255);
+  color: black;
 }

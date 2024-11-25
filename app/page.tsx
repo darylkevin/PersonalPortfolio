@@ -38,6 +38,24 @@ export default function Home() {
       }
     };
 
+    const scrollTop = window.scrollY; // Distance scrolled from the top
+    const scrollHeight = document.documentElement.scrollHeight; // Total height of the document
+    const clientHeight = document.documentElement.clientHeight; // Viewport height
+  
+    const overscrolledTop = scrollTop < 0; // Check if overscrolled at the top
+    const overscrolledBottom = scrollTop + clientHeight > scrollHeight; // Check if overscrolled at the bottom
+  
+    const html = document.documentElement;
+  
+    // Change the background color based on overscroll
+    if (overscrolledTop) {
+      html.style.backgroundColor = 'rgb(10, 36, 77)'; // Top overscroll color
+    } else if (overscrolledBottom) {
+      html.style.backgroundColor = 'rgb(11, 17, 32)'; // Bottom overscroll color
+    } else {
+      html.style.backgroundColor = ''; // Reset to default when not overscrolled
+    }
+
     window.addEventListener("scroll", updateScrollStatus);
 
     return () => {

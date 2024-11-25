@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { hero, profileLinks, profileLinkKey } from "../lib/definitions";
+import { hero, profileLinks } from "../lib/definitions";
 
 const Hero = ({ scrollStatus }) => {
   return (
@@ -12,12 +12,14 @@ const Hero = ({ scrollStatus }) => {
         <span className="text-3xl sm:text-4xl md:text-6xl lg:text-5xl">
           {hero.name}
         </span>
-        <p className="text-md py-1 font-light sm:text-lg md:text-2xl lg:py-3 lg:text-xl">
+        <p className="text-md py-2 font-light sm:text-lg md:text-2xl lg:py-3 lg:text-xl">
           {hero.title}
         </p>
-        <p className="text-md py-4 font-extralight lg:py-8">{hero.about}</p>
+        <p className="text-md py-4 font-extralight text-slate-400 lg:py-8">
+          {hero.about}
+        </p>
 
-        <div className="flex h-24 justify-center gap-8 py-4 pb-8 max-lg:hidden">
+        <div className="flex h-24 justify-center gap-6 py-4 pb-8 max-lg:hidden">
           <div
             className="relative transition-all hover:scale-105 hover:cursor-pointer"
             onClick={() =>
@@ -29,12 +31,12 @@ const Hero = ({ scrollStatus }) => {
             }
           >
             <span
-              className={`${scrollStatus === "experiences" ? "text-lg" : "text-sm opacity-50"} select-none font-bold blur-2xl transition-all`}
+              className={`${scrollStatus === "experiences" ? "text-sm" : "pt-1 text-xs text-slate-400"} select-none font-bold blur-2xl transition-all`}
             >
               Experiences
             </span>
             <h1
-              className={`${scrollStatus === "experiences" ? "text-lg" : "pt-1 text-sm opacity-50"} absolute inset-0 select-auto font-bold transition-all`}
+              className={`${scrollStatus === "experiences" ? "text-sm" : "pt-1 text-xs text-slate-400"} absolute inset-0 select-auto font-bold transition-all`}
             >
               Experiences
             </h1>
@@ -50,12 +52,12 @@ const Hero = ({ scrollStatus }) => {
             }
           >
             <span
-              className={`${scrollStatus === "projects" ? "text-lg" : "pt-1 text-sm opacity-50"} select-none font-bold blur-2xl transition-all`}
+              className={`${scrollStatus === "projects" ? "text-sm" : "pt-1 text-xs text-slate-400"} select-none font-bold blur-2xl transition-all`}
             >
               Projects
             </span>
             <h1
-              className={`${scrollStatus === "projects" ? "text-lg" : "pt-1 text-sm opacity-50"} absolute inset-0 select-auto font-bold transition-all`}
+              className={`${scrollStatus === "projects" ? "text-sm" : "pt-1 text-xs text-slate-400"} absolute inset-0 select-auto font-bold transition-all`}
             >
               Projects
             </h1>
@@ -71,30 +73,29 @@ const Hero = ({ scrollStatus }) => {
             }
           >
             <span
-              className={`${scrollStatus === "education" ? "text-lg" : "pt-1 text-sm opacity-50"} select-none font-bold blur-2xl transition-all`}
+              className={`${scrollStatus === "education" ? "text-sm" : "pt-1 text-xs text-slate-400"} select-none font-bold blur-2xl transition-all`}
             >
               Education
             </span>
             <h1
-              className={`${scrollStatus === "education" ? "text-lg" : "pt-1 text-sm opacity-50"} absolute inset-0 select-auto font-bold transition-all`}
+              className={`${scrollStatus === "education" ? "text-sm" : "pt-1 text-xs text-slate-400"} absolute inset-0 select-auto font-bold transition-all`}
             >
               Education
             </h1>
           </div>
         </div>
 
-        <div className="flex justify-center gap-2">
+        <div className="flex justify-center gap-2 py-8">
           {Object.keys(profileLinks).map((link) => {
-            const profileLink = profileLinks[link as profileLinkKey];
             return (
               <Link
                 key={link}
-                href={profileLink.url}
-                className="opacity-50 hover:opacity-100"
+                href={profileLinks[link].url}
+                className="text-slate-400 opacity-50 hover:opacity-100"
               >
                 <Image
-                  src={profileLink.icon}
-                  alt={profileLink.alt}
+                  src={profileLinks[link].icon}
+                  alt={profileLinks[link].alt}
                   width={24}
                   height={24}
                 />
