@@ -13,17 +13,16 @@ const Projects = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const projects = projectsRef.current;
-  
+
       projects.getBoundingClientRect().top <= 0
         ? projects.classList.add("backdrop-blur")
         : projects.classList.remove("backdrop-blur");
     });
-    
+
     return () => {
       window.removeEventListener("scroll", updateScrollStatus);
     };
-  }, [])
-
+  }, []);
 
   return (
     <section

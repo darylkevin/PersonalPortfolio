@@ -11,7 +11,7 @@ const Education = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const education = educationRef.current;
-  
+
       education.getBoundingClientRect().top <= 0
         ? education.classList.add("backdrop-blur")
         : education.classList.remove("backdrop-blur");
@@ -20,8 +20,7 @@ const Education = () => {
     return () => {
       window.removeEventListener("scroll", updateScrollStatus);
     };
-  }, [])
-
+  }, []);
 
   return (
     <section

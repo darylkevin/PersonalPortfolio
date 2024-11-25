@@ -120,7 +120,7 @@ export const projects = [
 ];
 
 export const education = [
-  { 
+  {
     institution: "Lorem",
     degree: "Lorem ipsum",
     period: "2021",
@@ -128,7 +128,7 @@ export const education = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     link: "https://google.com",
   },
-  { 
+  {
     institution: "Lorem",
     degree: "Lorem ipsum",
     period: "2021",
@@ -136,7 +136,7 @@ export const education = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     link: "https://google.com",
   },
-]
+];
 
 export const footer = {
   text: "Labore esse nulla duis fugiat deserunt consectetur voluptate Lorem anim. Nulla voluptate nostrud id reprehenderit magna qui dolor duis. Cillum aute officia aliquip sint eu. Quis ex elit cupidatat est qui aliquip enim occaecat nulla mollit non sit enim.",

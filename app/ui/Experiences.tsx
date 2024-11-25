@@ -11,7 +11,7 @@ const Experiences = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const experiences = experiencesRef.current;
-  
+
       experiences.getBoundingClientRect().top <= 0
         ? experiences.classList.add("backdrop-blur")
         : experiences.classList.remove("backdrop-blur");
@@ -20,8 +20,7 @@ const Experiences = () => {
     return () => {
       window.removeEventListener("scroll", updateScrollStatus);
     };
-  }, [])
-
+  }, []);
 
   return (
     <section
