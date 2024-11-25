@@ -1,9 +1,3 @@
-export const links = {
-  experiences: true,
-  projects: true,
-  education: true,
-}
-
 export const hero = {
   name: "Lorem",
   title: "Lorem ipsum",
