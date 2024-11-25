@@ -11,16 +11,7 @@ export const experiences = [
     title: "Lorem ipsum",
     period: "2021",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
-    skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
-    link: "",
-  },
-  {
-    company: "Lorem",
-    title: "Lorem ipsum",
-    period: "2021",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
     link: "https://google.com",
   },
@@ -29,7 +20,7 @@ export const experiences = [
     title: "Lorem ipsum",
     period: "2021",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
     link: "https://google.com",
   },
@@ -38,7 +29,7 @@ export const experiences = [
     title: "Lorem ipsum",
     period: "2021",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
     link: "https://google.com",
   },
@@ -47,7 +38,16 @@ export const experiences = [
     title: "Lorem ipsum",
     period: "2021",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
+    skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
+    link: "https://google.com",
+  },
+  {
+    company: "Lorem",
+    title: "Lorem ipsum",
+    period: "2021",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
     link: "https://google.com",
   },
@@ -126,7 +126,7 @@ export const education = [
     period: "2021",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
-    link: "https://google.com",
+    link: "",
   },
   {
     institution: "Lorem",
@@ -134,7 +134,7 @@ export const education = [
     period: "2021",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
-    link: "https://google.com",
+    link: "",
   },
 ];
 

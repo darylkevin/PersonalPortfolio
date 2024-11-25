@@ -27,7 +27,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="text-md my-24 border-[1px] border-green-400"
+      className="text-md my-24"
     >
       <p
         ref={projectsRef}
@@ -47,7 +47,7 @@ const Projects = () => {
               className="hover:cursor-pointer"
               href={project.link}
             >
-              <ProjectCard key={index} project={project} />
+              <ProjectCard key={index} project={project} index={index} />
             </Link>
           </div>
         ))}

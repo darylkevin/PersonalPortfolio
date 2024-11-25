@@ -6,10 +6,10 @@ const Hero = ({ scrollStatus }) => {
   return (
     <section
       id="hero"
-      className="flex h-full place-items-center border-[1px] border-red-400 pt-2 text-center font-bold"
+      className="flex h-full place-items-center pt-2 font-bold"
     >
       <div className="flex-col justify-between">
-        <span className="text-3xl sm:text-4xl md:text-6xl lg:text-5xl">
+        <span className="hover:cursor-pointer text-3xl sm:text-4xl md:text-6xl lg:text-5xl" onClick={() => window.scrollTo(scrollX, 0)}>
           {hero.name}
         </span>
         <p className="text-md py-2 font-light sm:text-lg md:text-2xl lg:py-3 lg:text-xl">
@@ -19,7 +19,7 @@ const Hero = ({ scrollStatus }) => {
           {hero.about}
         </p>
 
-        <div className="flex h-24 justify-center gap-6 py-4 pb-8 max-lg:hidden">
+        <div className="flex h-24 gap-6 py-4 pb-8 max-lg:hidden">
           <div
             className="relative transition-all hover:scale-105 hover:cursor-pointer"
             onClick={() =>
@@ -85,7 +85,7 @@ const Hero = ({ scrollStatus }) => {
           </div>
         </div>
 
-        <div className="flex justify-center gap-2 py-8">
+        <div className="flex gap-2 py-8">
           {Object.keys(profileLinks).map((link) => {
             return (
               <Link

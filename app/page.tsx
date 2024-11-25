@@ -38,24 +38,6 @@ export default function Home() {
       }
     };
 
-    const scrollTop = window.scrollY; // Distance scrolled from the top
-    const scrollHeight = document.documentElement.scrollHeight; // Total height of the document
-    const clientHeight = document.documentElement.clientHeight; // Viewport height
-
-    const overscrolledTop = scrollTop < 0; // Check if overscrolled at the top
-    const overscrolledBottom = scrollTop + clientHeight > scrollHeight; // Check if overscrolled at the bottom
-
-    const html = document.documentElement;
-
-    // Change the background color based on overscroll
-    if (overscrolledTop) {
-      html.style.backgroundColor = "rgb(10, 36, 77)"; // Top overscroll color
-    } else if (overscrolledBottom) {
-      html.style.backgroundColor = "rgb(11, 17, 32)"; // Bottom overscroll color
-    } else {
-      html.style.backgroundColor = ""; // Reset to default when not overscrolled
-    }
-
     window.addEventListener("scroll", updateScrollStatus);
 
     return () => {
@@ -65,7 +47,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto max-w-screen-xl">
-      <div className="mx-auto grid grid-cols-1 px-8 xs:max-w-sm sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] lg:grid-cols-2 lg:px-12 xl:max-w-[1280px]">
+      <div className="mx-auto grid grid-cols-1 px-8 xs:max-w-sm sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] lg:grid-cols-2 gap-24 lg:px-12 xl:max-w-[1280px]">
         <header className="py-16 lg:sticky lg:top-0 lg:max-h-screen lg:min-h-[640px] lg:py-24">
           <Hero scrollStatus={scrollStatus} />
         </header>

@@ -25,7 +25,7 @@ const Experiences = () => {
   return (
     <section
       id="experiences"
-      className="text-md mb-24 border-[1px] border-blue-400"
+      className="text-md mb-24"
     >
       <p
         ref={experiencesRef}
@@ -44,7 +44,7 @@ const Experiences = () => {
             className="hover:cursor-pointer"
             href={exp.link}
           >
-            <ExperienceCard experience={exp} />
+            <ExperienceCard experience={exp} index={index} />
           </Link>
         </div>
       ))}

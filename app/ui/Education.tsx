@@ -25,7 +25,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="text-md my-24 border-[1px] border-yellow-400"
+      className="text-md my-24"
     >
       <p
         ref={educationRef}
@@ -40,7 +40,7 @@ const Education = () => {
           key={index}
         >
           <Link id={`education-${index}`} href={edu.link}>
-            <EducationCard education={edu} />
+            <EducationCard education={edu} index={index} />
           </Link>
         </div>
       ))}
