@@ -47,13 +47,13 @@ export default function Home() {
 
   return (
     <div className="mx-auto max-w-screen-xl">
-      <div className="mx-auto grid grid-cols-1 px-8 xs:max-w-sm sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] lg:grid-cols-2 gap-24 lg:px-12 xl:max-w-[1280px]">
+      <div className="mx-auto grid grid-cols-1 gap-24 max-lg:px-4 xs:max-w-sm sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] lg:grid-cols-2 lg:px-12 xl:max-w-[1280px]">
         <header className="py-16 lg:sticky lg:top-0 lg:max-h-screen lg:min-h-[640px] lg:py-24">
           <Hero scrollStatus={scrollStatus} />
         </header>
-        <main className="py-16 lg:py-24">
+        <main className="pb-16 lg:py-24">
           <Experiences />
-          <Projects scrollStatus={scrollStatus} />
+          <Projects />
           <Education />
           <Footer />
         </main>

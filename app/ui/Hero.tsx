@@ -4,14 +4,14 @@ import { hero, profileLinks } from "../lib/definitions";
 
 const Hero = ({ scrollStatus }) => {
   return (
-    <section
-      id="hero"
-      className="flex h-full place-items-center pt-2 font-bold"
-    >
+    <section id="hero" className="flex h-full place-items-center font-bold">
       <div className="flex-col justify-between">
-        <span className="hover:cursor-pointer text-3xl sm:text-4xl md:text-6xl lg:text-5xl" onClick={() => window.scrollTo(scrollX, 0)}>
+        <p
+          className="text-3xl hover:cursor-pointer sm:text-4xl md:text-6xl lg:text-5xl"
+          onClick={() => window.scrollTo(scrollX, 0)}
+        >
           {hero.name}
-        </span>
+        </p>
         <p className="text-md py-2 font-light sm:text-lg md:text-2xl lg:py-3 lg:text-xl">
           {hero.title}
         </p>

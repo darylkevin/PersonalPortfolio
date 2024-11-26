@@ -3,14 +3,11 @@
 @tailwind utilities;
 
 html {
-  background: rgba(11, 17, 32, 1);
-}
-
-body {
+  min-height: 100vh;
   color: white;
   background: linear-gradient(
     45deg,
-    rgba(51, 56, 56, 0.4) 0%,
+    rgb(55, 63, 63) 0%,
     rgb(12, 17, 18) 66%,
     rgb(10, 36, 77) 100%
   );
