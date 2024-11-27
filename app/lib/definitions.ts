@@ -24,33 +24,6 @@ export const experiences = [
     skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
     link: "https://google.com",
   },
-  {
-    company: "Lorem",
-    title: "Lorem ipsum",
-    period: "2021",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
-    skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
-    link: "https://google.com",
-  },
-  {
-    company: "Lorem",
-    title: "Lorem ipsum",
-    period: "2021",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
-    skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
-    link: "https://google.com",
-  },
-  {
-    company: "Lorem",
-    title: "Lorem ipsum",
-    period: "2021",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing elit. Fugiat, adipisci? Cumque eius quaerat tempora mollitia laborum enim.",
-    skills: ["lorem", "ipsum", "dolor", "sit", "amet"],
-    link: "https://google.com",
-  },
 ];
 
 export const projects = [
