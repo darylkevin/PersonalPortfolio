@@ -58,7 +58,7 @@ The site will be available at `http://localhost:3000`.
 
 ### Edit `definitions.ts`
 
-The `definitions.ts` file (located in `app/lib/`) is your one-stop shop for customizing this portfolio. Here's a quick overview of what you can configure:
+The `definitions.ts` file (located in `app/lib/`) is your one-stop shop for customizing this portfolio. Here's a quick overview of what you can configure (leave the link field as an empty string if you do not need it):
 
 #### **Hero Section**
 
@@ -84,6 +84,7 @@ export const experiences = [
     period: "Start-End Dates",
     description: "Brief summary of your responsibilities.",
     skills: ["Skill 1", "Skill 2", "Skill 3"],
+    link: "https://your-experience-showcase.com"
   },
 ];
 ```
@@ -100,6 +101,7 @@ export const projects = [
     imageAlt: "Alt text for the image",
     description: "A short description about the project.",
     skills: ["Technology 1", "Technology 2"],
+    link: "https://your-project-showcase.com"
   },
 ];
 ```
@@ -114,6 +116,7 @@ export const education = {
   degree: "Your Degree",
   period: "Start-End Dates",
   description: "Details about your studies.",
+  link: "https://your-institution-website.com"
 };
 ```
 
