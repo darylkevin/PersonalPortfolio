@@ -29,9 +29,9 @@ export default function Home() {
       const projectsTop = document.getElementById("projects")?.offsetTop;
       const educationTop = document.getElementById("education")?.offsetTop;
 
-      if (currentScrollHeight < 1.5 * projectsTop) {
+      if (projectsTop && currentScrollHeight < 1.5 * projectsTop) {
         setScrollStatus("experiences");
-      } else if (currentScrollHeight < educationTop) {
+      } else if (educationTop && currentScrollHeight < educationTop) {
         setScrollStatus("projects");
       } else {
         setScrollStatus("education");

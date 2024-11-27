@@ -1,4 +1,19 @@
-const ExperienceCard = ({ experience, index }) => {
+interface Experience {
+  company: string;
+  title: string;
+  period: string;
+  description: string;
+  skills: string[];
+  link: string;
+}
+
+const ExperienceCard = ({
+  experience,
+  index,
+}: {
+  experience: Experience;
+  index: number;
+}) => {
   return (
     <article className="grid grid-cols-1 gap-2 pb-8 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4">
       <p className="pt-1 text-sm text-slate-400">{experience.period}</p>

@@ -1,6 +1,21 @@
 import Image from "next/image";
 
-const ProjectCard = ({ project, index }) => {
+interface Project {
+  title: string;
+  image: string;
+  imageAlt: string;
+  description: string;
+  skills: string[];
+  link: string;
+}
+
+const ProjectCard = ({
+  project,
+  index,
+}: {
+  project: Project;
+  index: number;
+}) => {
   return (
     <article className="grid grid-cols-1 gap-2 pb-8 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4">
       <Image

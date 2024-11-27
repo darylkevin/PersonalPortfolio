@@ -1,4 +1,18 @@
-const EducationCard = ({ education, index }) => {
+interface Education {
+  institution: string;
+  degree: string;
+  period: string;
+  description: string;
+  link: string;
+}
+
+const EducationCard = ({
+  education,
+  index,
+}: {
+  education: Education;
+  index: number;
+}) => {
   return (
     <article className="pb-8">
       <div className="grid grid-cols-1 lg:grid-cols-2">
