@@ -4,7 +4,9 @@ Hong Kong
 
 # Personal Portfolio Template
 
-A sleek, professional, and low-profile portfolio template designed to showcase your experiences, projects, and skills effectively. This template is simple yet focused, allowing users to easily customize it to their needs.
+A sleek, professional, and low-profile portfolio template designed to showcase your experiences, projects, and skills effectively. This responsive template is simple yet focused, allowing users to easily customize it to their needs.
+
+![responsive-mockups](./public/screenshots/responsive.png)
 
 Made by yours truly, myself :)
 
@@ -173,12 +175,6 @@ npx prettier --write .
 - [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS framework for styling.
 - [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript for better developer experience.
 - [Prettier](https://prettier.io/) – Code formatter with TailwindCSS support.
-
----
-
-## 🖼️ Screenshots
-
-_Add screenshots or GIFs of your portfolio here to showcase the design’s responsiveness at various breakpoints!_
 
 ---
 
